@@ -14,12 +14,25 @@ body{
     background: lightcoral;
     padding: 0 20px;
 }
-.header h2{
+/*.header .logo{
+	width:66px;
+	height: 70px;
+}*/
+
+.header img{
+	width: 66px;
+	height: 70px;
+    filter: drop-shadow(1px 1px 3px #000);
+    float: left;
+    background:0009;
+}
+
+/*.header h2{
     line-height: 70px;
     float: left;
     text-transform: uppercase;
     color: black;
-}
+}*/
 .header .menu{
     list-style: none;
     float: right;
@@ -38,7 +51,7 @@ body{
     transition: .4s;
 }
 .menu li a:hover,.show-btn:hover, .hide-btn:hover{
-    color: red;
+    color: blue;
 
 }
 .show-btn, .hide-btn{
