@@ -1,0 +1,351 @@
+main{
+	height: auto;
+}
+
+main #section-one{
+	height: auto;
+	padding: 20px 0px 0px 0px;
+	margin-bottom: 50px;
+}
+
+main #section-one .main-card{
+	width: 80%;
+	margin: 0 auto;
+	height: 80vh;
+	box-shadow: 0px 0px 3px 1px #00000077;
+	padding: 10px;
+}
+
+main #section-one .main-card .card{
+	width: 100%;
+	height: 100%;
+	background: gainsboro;
+}
+
+main #section-one .main-card .card img{
+	width: 100%;
+	height: 100%;
+}
+
+main #section-two{
+
+}
+
+main #section-two .content{
+	width: 80%;
+	margin: auto;
+}
+
+main #section-two .content .text{
+	font-size: 25px;
+	color: #2f4f4f;
+	line-height: 40px;
+}
+
+main #section-three{
+	padding-top: 100px;
+}
+
+main #section-three #tag-h1{
+	width: 80%;
+	margin: auto;
+	font-size: 40px;
+	color: #2f4f4f;
+	padding-bottom: 10px;
+}
+
+main #section-three .content{
+	width: 80%;
+	margin: 50px auto;
+	height: auto;
+	
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 50px;
+	padding: 10px;
+}
+
+main #section-three .content .box{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+
+}
+
+main #section-three .content .box img{
+	width: 100%;
+	height: 100%;
+}
+
+main #section-three .content .box .box-text{
+	font-size: 25px;
+	line-height: 45px;
+	color: #2f4f4f;
+}
+
+main #section-four{
+	padding-top: 50px;
+}
+main #section-four #tag-h{
+	font-size: 40px;
+	color: #2f4f4f;
+	width: 80%;
+	margin: auto;
+}
+
+main #section-four .design{
+	width: 80%;
+	height: auto;
+	margin: 50px auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	grid-gap: 50px;
+	padding: 10px;
+}
+
+main #section-four .design .group{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+main #section-four .design .group img{
+	width: 100%;
+	height: 100%;
+}
+
+main #section-four .design .group .p-text{
+	color: #2f4f4f;
+	font-size: 25px;
+	line-height: 45px;
+}
+
+@media screen and (max-width: 991px){
+	main #section-one{
+		margin-bottom: 100px;
+	}
+	main #section-one .main-card{
+		height: 50vh;
+		width: 90%;
+	}
+	main #section-two .content{
+		width: 90%;
+	}
+	main #section-two .content .text{
+		font-size: 50px;
+		line-height: 100px;
+	}
+	main #section-three #tag-h1{
+		font-size: 90px;
+		width: 90%;
+	}
+	main #section-three{
+		padding-top: 200px;
+	}
+	main #section-three .content{
+		width: 90%;
+		grid-template-rows: 1000px auto;
+		grid-template-columns: auto;
+	}
+	main #section-three .content .box .box-text{
+		font-size: 60px;
+		line-height: 100px;
+	}
+	main #section-four #tag-h{
+		font-size: 90px;
+		width: 90%;
+	}
+	main #section-four .design{
+		grid-template-columns: auto;
+		grid-template-rows: auto;
+		width: 90%;
+	}
+	main #section-four .design .group img{
+		display: none;
+	}
+	main #section-four .design .group .p-text{
+		font-size: 60px;
+		line-height: 100px;
+	}
+}
+
+/* For Microsoft Lumina 550 */
+@media screen and (device-width: 640px) and (device-height: 360px){
+	main #section-one{
+		margin-bottom: 50px;
+	}
+	main #section-one .main-card{
+		height: 70vh;
+	}
+	main #section-three{
+		padding-top: 100px;
+	}
+	main #section-two .content .text{
+		font-size: 40px;
+		line-height: 70px;
+	}
+	main #section-three #tag-h1{
+		font-size: 60px;
+	}
+	main #section-three .content{
+		grid-template-rows: 500px auto;
+	}
+	main #section-three .content .box .box-text{
+		font-size: 40px;
+		line-height: 70px;
+	}
+	main #section-four #tag-h{
+		font-size: 70px;
+	}
+	main #section-four .design .group .p-text{
+		font-size: 40px;
+		line-height: 70px;
+	}
+}
+
+/* For Jio Phones */
+@media screen and (device-width: 240px) and (device-height: 320px){
+	main #section-one .main-card{
+		height: 85vh;
+	}
+	main #section-two .content .text{
+		font-size: 25px;
+	}
+	main #section-three .content .box .box-text{
+		font-size: 65px;
+	}
+	main #section-four .design .group .p-text{
+		font-size: 65px;
+	}
+}
+
+/* For IPads */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+	main #section-three .content .box .box-text{
+		font-size: 50px;
+	}
+	main #section-four .design .group .p-text{
+		font-size: 50px;
+	}
+}
+
+/* For IPad Pros */
+@media screen and (min-width: 1024px) and (min-height: 1320px){
+	main #section-one{
+		margin-bottom: 100px;
+	}
+	main #section-one .main-card{
+		height: 50vh;
+		width: 90%;
+	}
+	main #section-two .content{
+		width: 90%;
+	}
+	main #section-two .content .text{
+		font-size: 50px;
+		line-height: 100px;
+	}
+	main #section-three #tag-h1{
+		font-size: 90px;
+		width: 90%;
+	}
+	main #section-three{
+		padding-top: 200px;
+	}
+	main #section-three .content{
+		width: 90%;
+		grid-template-rows: 1000px auto;
+		grid-template-columns: auto;
+	}
+	main #section-three .content .box .box-text{
+		font-size: 50px;
+		line-height: 100px;
+	}
+	main #section-four #tag-h{
+		font-size: 90px;
+		width: 90%;
+	}
+	main #section-four .design{
+		grid-template-columns: auto;
+		grid-template-rows: auto;
+		width: 90%;
+	}
+	main #section-four .design .group img{
+		display: none;
+	}
+	main #section-four .design .group .p-text{
+		font-size: 50px;
+		line-height: 100px;
+	}
+}
+
+/* For Surface Duos */
+@media screen and (device-width: 450px) and (device-height: 600px){
+	main #section-three .content .box .box-text{
+		font-size: 50px;
+	}
+	main #section-four .design .group .p-text{
+		font-size: 50px;
+	}
+}
+
+/* For Galaxy Fold */
+@media screen and (device-width: 280px) and (device-height: 653px){
+	main #section-two .content .text{
+		font-size: 50px;
+	}
+	main #section-three .content .box .box-text{
+		font-size: 75px;
+	}
+	main #section-four .design .group .p-text{
+		font-size: 75px;
+	}
+}
+
+/* For Blackberry Playbook */
+@media screen and (device-width: 600px) and (device-height: 1024px){
+	main #section-two .content .text{
+		font-size: 60px;
+	}
+}
+
+/* For Nexus7 */
+@media screen and (device-width: 600px) and (device-height: 960px){
+	main #section-two .content .text{
+		font-size: 60px;
+	}
+}
+
+/* For Nokia Lumina 520 */
+@media screen and (device-width: 320px) and (device-height: 533px){
+	main #section-two .content .text{
+		font-size: 40px;
+	}
+}
+
+/* For nokia N9 */
+@media screen and (device-width: 480px) and (device-height: 854px){
+	main #section-one .main-card{
+		height: 60vh;
+	}
+	main #section-two .content .text{
+		font-size: 70px;
+	}
+	main #section-three .content .box .box-text{
+		font-size: 70px;
+	}
+	main #section-four .design .group .p-text{
+		font-size: 70px;
+	}
+}
+
+/* For iPhone4 */
+@media screen and (device-width: 320px) and (device-height: 480px){
+	main #section-two .content .text{
+		font-size: 40px;
+	}
+}

@@ -1,0 +1,374 @@
+main{
+	height: auto;
+}
+
+main #section-one{
+	width: 100%;
+	height: auto;
+	padding: 20px 0px 100px 0px;
+}
+
+main #section-one .main-card{
+	width: 80%;
+	height: 80vh;
+	padding: 10px;
+	margin: 0 auto;
+	box-shadow: 0px 0px 3px 1px #0000007B;
+}
+
+main #section-one .main-card .card{
+	background: gainsboro;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+main #section-one .main-card .card .imageHolder{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+
+main #section-one .main-card .card img{
+	width: 100%;
+	height: 100%;
+	user-select: none;
+}
+
+.caption{
+	display: none;
+}
+
+main #section-one .main-card .card .captionHolder{
+	height: 70px;
+	background: #00000077;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	z-index: 1;
+}
+
+main #section-one .main-card .card .captionHolder .text{
+	color: white;
+	font-size: 35px;
+	font-family: sans-serif;
+	line-height: 70px;
+	user-select: none;
+}
+
+main #section-one .main-card .card .leftArrow,
+main #section-one .main-card .card .rightArrow{
+	width: 60px;
+	height: 70px;
+	position: absolute;
+	top: 40%;
+	background: #00000036;
+	cursor: pointer;
+	z-index: 1;
+}
+
+main #section-one .main-card .card .leftArrow{
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+main #section-one .main-card .card .rightArrow{
+	right: 0;
+	left: auto;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+main #section-one .main-card .card .leftArrow:hover,
+main #section-one .main-card .card .rightArrow:hover{
+	background: #000000a8;
+}
+
+main #section-one .main-card .card .leftArrow .arrow,
+main #section-one .main-card .card .rightArrow .arrow{
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	border: 3px solid #fff;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-left: none;
+	border-bottom: none;
+}
+
+main #section-one .main-card .card .leftArrow .arrow.arrowleft{
+	transform: rotateZ(-135deg);
+}
+
+main #section-one .main-card .card .rightArrow .arrow.arrowRight{
+	transform: rotateZ(45deg);
+}
+
+.card .moveRightCurrent{
+	animation-name: moveRightCurrentSlide;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+} 
+
+@keyframes moveRightCurrentSlide{
+	from{
+		margin-left: 0;
+		opacity: 1;
+	}to{
+		margin-left: -100%;
+		opacity: 1;
+	}
+}
+
+.card .moveRightNext{
+	animation-name: moveRightNextSlide;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes moveRightNextSlide{
+	from{
+		margin-left: 100%;
+		opacity: 1;
+	}to{
+		margin-left: 0;
+		opacity: 1;
+	}
+}
+
+.card .moveLeftCurrent{
+	animation-name: moveLeftCurrentSlide;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes moveLeftCurrentSlide{
+	from{
+		margin-left: 0;
+		opacity: 1;
+	}to{
+		margin-left: 100%;
+		opacity: 1;
+	}
+}
+
+.card .moveLeftNext{
+	animation-name: moveLeftNextSlide;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes moveLeftNextSlide{
+	from{
+		margin-left: -100%;
+		opacity: 1;
+	}to{
+		margin-left: 0;
+		opacity: 1;
+	}
+}
+
+main #section-two{
+	height: auto;
+}
+
+main #section-two #tag-2{
+	width: 80%;
+	margin: auto;
+	font-size: 40px;
+	color: #2f4f4f;
+}
+
+main #section-two .content{
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: repeat(8, auto);
+	grid-gap: 50px;
+	width: 80%;
+	margin: auto;
+}
+
+main #section-two .content .design{
+	width: 100%;
+	height: 600px;
+	padding: 10px;
+	position: relative;
+}
+#hr-2{
+	margin-bottom: 70px;
+}
+
+main #section-two .content .design .grid-two{
+	display: grid;
+	grid-gap: 10px;
+	grid-template-rows: 500px auto;
+	grid-template-columns: auto;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+main #section-two .content .design .grid-two .box{
+
+	width: 100%;
+	height: 100%;
+}
+
+main #section-two .content .design .grid-two .box img{
+	width: 100%;
+	height: 100%;
+}
+
+main #section-two .content .design .grid-two .box #para{
+	font-size: 25px;
+	line-height: 45px;
+	color: #2f4f4f;
+	letter-spacing: 1px;
+}
+
+@media screen and (max-width: 991px){
+	main #section-one .main-card{
+		width: 90%;
+		height: 40vh;
+	}
+	main #section-one .main-card .card .leftArrow,
+	main #section-one .main-card .card .rightArrow{
+		width: 100px;
+		height: 150px;
+	}
+	main #section-one .main-card .card .leftArrow .arrow,
+	main #section-one .main-card .card .rightArrow .arrow{
+		width: 40px;
+		height: 40px;
+		border-width: 5px;
+	}
+	main #section-one .main-card .card .captionHolder{
+		height: 150px;
+	}
+	main #section-one .main-card .card .captionHolder .text{
+		line-height: 150px;
+		font-size: 50px;
+	}
+	main #section-two #tag-2{
+		font-size: 80px;
+		width: 90%;
+	}
+	main #section-two .content{
+		height: auto;
+		width: 90%;
+	}
+	main #section-two .content .design{
+		height: 1800px;
+	}
+	main #section-two .content .design .grid-two{
+		grid-template-rows: 1300px auto;
+	}
+	main #section-two .content .design .grid-two .box #para{
+		font-size: 65px;
+		line-height: 85px;
+	}
+}
+
+/* For Microsoft Lumina 550 */
+@media screen and (device-width: 640px) and (device-height: 360px){
+	main #section-one .main-card{
+		height: 75vh;
+	}
+	main #section-one .main-card .card .leftArrow,
+	main #section-one .main-card .card .rightArrow{
+		top: 20%;
+	}
+	main #section-one .main-card .card .captionHolder{
+		height: 70px;
+	}
+	main #section-one .main-card .card .captionHolder .text{
+		line-height: 70px;
+		font-size: 40px;
+	}
+	main #section-two #tag-2{
+		font-size: 70px;
+	}
+	main #section-two .content .design{
+		height: 700px;
+	}
+	main #section-two .content .design .grid-two{
+		grid-template-rows: 500px auto;
+	}
+	main #section-two .content .design .grid-two .box #para{
+		font-size: 40px;
+		line-height: 65px;
+	}
+}
+
+/* For Jio Phones */
+@media screen and (device-width: 240px) and (device-height: 320px){
+	main #section-one .main-card{
+		height: 85vh;
+	}
+}
+
+/* For IPad Pros */
+@media screen and (min-width: 1024px) and (min-height: 1320px){
+	main #section-one .main-card{
+		height: 75vh;
+	}
+	main #section-one .main-card .card .leftArrow,
+	main #section-one .main-card .card .rightArrow{
+		width: 100px;
+		height: 150px;
+	}
+	main #section-one .main-card .card .leftArrow .arrow,
+	main #section-one .main-card .card .rightArrow .arrow{
+		width: 20px;
+		height: 20px;
+	}
+	main #section-one .main-card .card .captionHolder{
+		height: 130px;
+	}
+	main #section-one .main-card .card .captionHolder .text{
+		line-height: 130px;
+		font-size: 45px;
+	}
+	main #section-two #tag-2{
+		font-size: 65px;
+	}
+	main #section-two .content .design{
+		height: 1200px;
+	}
+	main #section-two .content .design .grid-two{
+		grid-template-rows: 800px auto;
+	}
+	main #section-two .content .design .grid-two .box #para{
+		font-size: 50px;
+		line-height: 65px;
+	}
+}
+
+/* For Surface Duo */
+@media screen and (device-width: 450px) and (device-height: 600px){
+	main #section-one .main-card{
+		height: 80vh;
+	}
+	main #section-two .content .design{
+		height: 1400px;
+	}
+	main #section-two .content .design .grid-two{
+		grid-template-rows: 1000px auto;
+	}
+	main #section-two .content .design .grid-two .box #para{
+		font-size: 50px;
+	}
+}

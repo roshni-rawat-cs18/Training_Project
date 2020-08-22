@@ -1,0 +1,291 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+	height: auto;
+
+}
+
+main #section-one{
+	background: violet;
+	height: 100vh;
+	position: relative;
+}
+
+main #section-one img{
+	width: 100%;
+	height: 100%;
+}
+
+main #section-one .text{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rosybrown;
+	opacity: 0.6;
+}
+
+main #section-one .caption-holder{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	text-align: center;
+}
+
+main #section-one .caption-holder .caption-main{
+	width: 60%;
+	margin: auto;
+	height: 100%;
+}
+
+main #section-one .caption-holder .caption-main .real-caption{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+main #section-one .caption-holder .caption-main .caption{
+	display: none;
+}
+
+.real-caption{
+	font-size: 50px;
+}
+
+main #section-one .caption-holder .caption-main .leftArrow,
+main #section-one .caption-holder .caption-main .rightArrow{
+	background: #00000036;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 40%;
+	left: 0;
+	cursor: pointer;
+}
+
+main #section-one .caption-holder .caption-main .leftArrow{
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+main #section-one .caption-holder .caption-main .rightArrow{
+	left: auto;
+	right: 0;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+main #section-one .caption-holder .caption-main .leftArrow:hover,
+main #section-one .caption-holder .caption-main .rightArrow:hover{
+	background: #00000088;
+}
+
+main #section-one .caption-holder .caption-main .leftArrow .arrow,
+main #section-one .caption-holder .caption-main .rightArrow .arrow{
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	border: 5px solid #fff;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-left: none;
+	border-bottom: none;
+}
+
+main #section-one .caption-holder .caption-main .leftArrow .arrow.arrowLeft{
+	transform: rotateZ(-135deg);
+}
+
+main #section-one .caption-holder .caption-main .rightArrow .arrow.arrowRight{
+	transform: rotateZ(45deg);
+}
+
+main #section-two{
+	height: auto;
+	padding-top: 100px;
+}
+
+main #section-two #tag-two{
+	width: 80%;
+	margin: auto;
+	font-size: 40px;
+	color: #2f4f4f;
+}
+
+main #section-two #hr-2{
+	margin-bottom: 50px;
+}
+
+main #section-two .content{
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: auto;
+	width: 80%;
+	margin: auto;
+	height: auto;
+	grid-gap: 20px;
+}
+
+main #section-two .content .image-content{
+	margin: 10px;
+}
+
+main #section-two .content .image-content img{
+	width: 100%;
+	height: 100%;
+	filter: drop-shadow(2px 2px 2px #000);
+}
+
+main #section-two .content .text-content{
+	margin: 10px;
+	display: flex;
+	align-items: center;
+}
+
+main #section-two .content .text-content .text-content-text{
+	font-size: 30px;
+	line-height: 50px;
+	color: #2f4f4f;
+}
+
+main #section-three{
+	height: auto;
+	padding-top: 100px;
+}
+
+main #section-three #tag-three{
+	width: 80%;
+	margin: auto;
+	font-size: 40px;
+	color: #2f4f4f;
+}
+
+main #section-three .designs{
+	display: grid;
+	width: 90%;
+	margin: auto;
+	height: auto;
+	border: 1px solid #2f4f4f;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(4, 500px);
+	grid-gap: 10px;
+}
+
+main #section-three .designs .design{
+	background: gainsboro;
+	margin: 10px;
+}
+
+main #section-three .designs .design img{
+	width: 100%;
+	height: 100%;
+}
+
+main #section-three #hr-3{
+	margin-bottom: 70px;
+}
+
+@media screen and (max-width: 800px){
+	.real-caption{
+		font-size: 80px;
+	}
+	main #section-one .caption-holder .caption-main .leftArrow,
+	main #section-one .caption-holder .caption-main .rightArrow{
+		width: 150px;
+		height: 150px;
+	}
+	main #section-two #tag-two{
+		width: 90%;
+		font-size: 80px;
+	}
+	main #section-two .content{
+		display: grid;
+		grid-template-rows: auto;
+		grid-template-columns: auto;
+	}
+	main #section-two .content .image-content{
+		display: none;
+	}
+	main #section-two .content .text-content .text-content-text{
+		font-size: 55px;
+		line-height: 70px;
+	}
+	main #section-three #tag-three{
+		width: 90%;
+		font-size: 80px;
+	}
+	main #section-three .designs{
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-rows: repeat(8, 1000px);
+		grid-gap: 50px;
+		border: none;
+	}
+	main #section-three .designs .design{
+	}
+}
+
+/* For IPad Pros */
+@media screen and (min-width: 1024px) and (min-height: 1320px){
+	.real-caption{
+		font-size: 80px;
+	}
+	main #section-one .caption-holder .caption-main .leftArrow,
+	main #section-one .caption-holder .caption-main .rightArrow{
+		width: 150px;
+		height: 150px;
+	}
+	main #section-two #tag-two{
+		width: 90%;
+		font-size: 80px;
+	}
+	main #section-two .content{
+		display: grid;
+		grid-template-rows: auto;
+		grid-template-columns: auto;
+	}
+	main #section-two .content .image-content{
+		display: none;
+	}
+	main #section-two .content .text-content .text-content-text{
+		font-size: 55px;
+		line-height: 70px;
+	}
+	main #section-three #tag-three{
+		width: 90%;
+		font-size: 80px;
+	}
+	main #section-three .designs{
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-rows: repeat(8, 1000px);
+		grid-gap: 50px;
+		border: none;
+	}
+	main #section-three .designs .design{
+	 }
+}
+
+/* For Microsoft Lumina 550 */
+@media screen and (device-width: 640px) and (device-height: 360px){
+	.real-caption{
+		font-size: 45px;
+	}
+}
+
+
+
+
