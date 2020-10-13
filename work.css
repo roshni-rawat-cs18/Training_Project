@@ -246,13 +246,13 @@ main #section-two .content .design .grid-two .box #para{
 	}
 	main #section-one .main-card .card .leftArrow,
 	main #section-one .main-card .card .rightArrow{
-		width: 100px;
-		height: 150px;
+		width: 60px;
+		height: 60px;
 	}
 	main #section-one .main-card .card .leftArrow .arrow,
 	main #section-one .main-card .card .rightArrow .arrow{
-		width: 40px;
-		height: 40px;
+		width: 20px;
+		height: 20px;
 		border-width: 5px;
 	}
 	main #section-one .main-card .card .captionHolder{
@@ -260,7 +260,7 @@ main #section-two .content .design .grid-two .box #para{
 	}
 	main #section-one .main-card .card .captionHolder .text{
 		line-height: 150px;
-		font-size: 50px;
+		font-size: 20px;
 	}
 	main #section-two #tag-2{
 		font-size: 80px;
@@ -280,6 +280,7 @@ main #section-two .content .design .grid-two .box #para{
 		font-size: 65px;
 		line-height: 85px;
 	}
+	
 }
 
 /* For Microsoft Lumina 550 */

@@ -84,7 +84,6 @@ main .form-main{
 	outline: none;
 	border-width: 1px;
 }
-
 #footer-main{
 	margin-top: 100px;
 	background: #0000007B;
@@ -100,13 +99,13 @@ main .form-main{
 /* For mobiles */
 @media screen and (max-width: 991px){
 	main #headline{
-		font-size: 100px;
+		font-size: 40px;
 	}
 	main .form-main{
-		width: 90%;
+		width: 40%;
 	}
 	.content-name{
-		font-size: 60px;
+		font-size: 20px;
 	}
 	.form-group .input:focus + .label-name .content-name,
 	.form-group .input:valid + .label-name .content-name{
@@ -123,9 +122,9 @@ main .form-main{
 		justify-content: space-around;
 	}
 	.form-main .form-group .btn{
-		font-size: 50px;
-		width: 500px;
-		height: 130px;
+		font-size: 15px;
+		width: 180px;
+		height: 50px;
 		border-radius: 70px;
 	}
 	#footer-main{

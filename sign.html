@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>sign up page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body{
+        color:white;
+        font-weight: bolder;
+    }
+    h1{
+        text-align: center;
+    }
+    .bg{
+         background-image: url('images/darkimage.jpg');
+         background-repeat: no-repeat;
+         background-size: cover;
+         width: 100%;
+         height: 100vh;
+        }
+    .form-conatiner{
+         border: 1px solid black;
+         padding: 20px 30px;
+         margin-top: 10px;
+         box-shadow: -1px 4px 26px 11px rgba(0, 0, 0, 0.75);
+         
+         
+        }
+</style>
+</head>
+<body>
+   <div class="conatiner-fluid bg">
+       <div class="row">
+           <div class="col-md-4 col-sm-4 col-xs-14"></div>
+           <div class="col-md-4 col-sm-4 col-xs-14">
+               <!--form start-->
+                <form class="form-conatiner">
+                  <h1>Sign Up Form</h1>
+                  <div class="form-group">
+                    <label for="exampleInputUserName">Username</label>
+                    <input type="name" class="form-control" id="exampleInputUserName" placeholder="Username">
+                  </div>
+                  <div class="form-group">
+                     <label for="exampleInputEmail1">Email address</label>
+                     <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"> 
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  </div>
+                   <div class="form-group">
+                     <label for="exampleInputPassword1"> Conferm Password</label>
+                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder=" Conferm Password">
+                   </div>
+                    <button type="submit" class="btn btn-success btn-block">Submit</button>
+                    <p>Aleardy have an account?<span class="htag">login</span></p>
+                    <p><a href="index.html">Back to home</a></p>
+              </form>
+            <!--form end-->
+           </div>
+           <div class="col-md-4 col-sm-4 col-xs-14"></div>
+       </div>
+   </div> 
+</body>
+</html>
