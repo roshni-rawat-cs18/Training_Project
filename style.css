@@ -91,6 +91,26 @@ body{
         right: 20px;
         top: 10px;
     }
+
+    .content h1{
+        height: 100px;
+        width: 200px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-top: -100px;
+        margin-left: -200px;
+    }
+    .btn{
+        display: center;
+        padding: 5px 12px;
+        font-weight: lighter;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 100px;
+        transition: background-color 0.2s,border 0.2s,color 0.2s;
+        text-align: center;
+    }
     
 }
 .content h1{
@@ -141,10 +161,58 @@ body{
     50%{color:red;}
     100%{color:yellow;}
 }
-/*@media screen and (max-width: 771px){
+@media(max-width: 560px){
+    
     .content h1{
-        visibility: hidden;
-
+        height: 80px;
+        width: 160px;
+        position: fixed;
+        top: 25%;
+        left: 25%;
+        margin-top: -50px;
+        margin-left: -100px;
     }
-}*/
+    .btn{
+        display: center;
+        padding: 4px 8px;
+        font-weight: lighter;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 50px;
+        transition: background-color 0.2s,border 0.2s,color 0.2s;
+        text-align: center;
+    }
+    .btn-full{
+        background-color: transparent;
+        color:orangered;
+        margin-top: 5px;
+        border: 1px solid orangered ;
+        font-size: 20px;
+    }
+    .btn-full:hover{
+        background-color: blue;
+    
+    
+    }
+    .btn-nav{
+        background-color: transparent;
+        color:orangered;
+        margin-top: 5px;
+        border: 1px solid orangered;
+        font-size: 20px;
+    }
+    .btn-nav:hover{
+        background-color: blue;
+    }
+    .colorchange{
+        animation:colorchangefunterior 1s infinite;
+    }
+    @keyframes colorchangefunterior{
+        0%{color: green;}
+        25%{color:blue;}
+        50%{color:red;}
+        100%{color:yellow;}
+    }
 
+
+}
