@@ -291,10 +291,98 @@ main #section-three #hr-3{
 }
 
 /* For Microsoft Lumina 550 */
-@media screen and (device-width: 640px) and (device-height: 360px){
+@media screen and (max-width: 640px){
 	.real-caption{
 		font-size: 20px;
 	}
+	main #section-one{
+		background: violet;
+		height: 50%;
+		position: relative;
+	}
+	main #section-one img{
+		width: 100%;
+		height: 50%;
+	}
+	main #section-one .caption-holder .caption-main .leftArrow,
+	main #section-one .caption-holder .caption-main .rightArrow{
+		width: 40px;
+		height: 40px;
+	}
+	main #section-one .caption-holder .caption-main .leftArrow .arrow,
+    main #section-one .caption-holder .caption-main .rightArrow .arrow{
+	width: 20px;
+	height: 20px;
+	}
+	main #section-two{
+		height: auto;
+		padding-top: 40px;
+	}
+	
+	main #section-two #tag-two{
+		width: 80%;
+		margin: auto;
+		font-size: 35px;
+		color: #2f4f4f;
+	}
+	
+	main #section-two #hr-2{
+		margin-bottom: 20px;
+	}
+	
+	main #section-two .content{
+		display: grid;
+		width: 80%;
+		margin: auto;
+		height: auto;
+		grid-gap: 10px;
+		
+	}
+	main #section-two .content .text-content{
+		margin: 5px;
+		display: flex;
+		align-items: center;
+	}
+	
+	main #section-two .content .text-content .text-content-text{
+		font-size: 20px;
+		line-height: 25px;
+		color: #2f4f4f;
+	}
+	main #section-three{
+		height: auto;
+		padding-top: 30px;
+	}
+	
+	main #section-three #tag-three{
+		width: 80%;
+		margin: auto;
+		font-size: 35px;
+		color: #2f4f4f;
+	}
+	
+	main #section-three .designs{
+		display: block;
+		width: 100%;
+		margin: auto;
+		height: 40%;
+	}
+	
+	main #section-three .designs .design{
+		background: gainsboro;
+		margin: 10px;
+	}
+	
+	main #section-three .designs .design img{
+		width: 100%;
+		height: 40%;
+	}
+	
+	main #section-three #hr-3{
+		margin-bottom: 70px;
+	}
+	
+	
 }
 
 

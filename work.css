@@ -284,9 +284,21 @@ main #section-two .content .design .grid-two .box #para{
 }
 
 /* For Microsoft Lumina 550 */
-@media screen and (device-width: 640px) and (device-height: 360px){
+@media screen and (max-width: 640px){
+	main #section-one .main-card .card .imageHolder{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+	}
+	
+	main #section-one .main-card .card img{
+		width: 100%;
+		height: 100%;
+		user-select: none;
+	}
 	main #section-one .main-card{
-		height: 75vh;
+		height: 45vh;
 	}
 	main #section-one .main-card .card .leftArrow,
 	main #section-one .main-card .card .rightArrow{
@@ -296,31 +308,64 @@ main #section-two .content .design .grid-two .box #para{
 		height: 70px;
 	}
 	main #section-one .main-card .card .captionHolder .text{
-		line-height: 70px;
-		font-size: 40px;
+		line-height: 35px;
+		font-size: 20px;
 	}
 	main #section-two #tag-2{
-		font-size: 70px;
+		width: 80%;
+		margin: auto;
+		font-size: 35px;
+		color: #2f4f4f;
 	}
+	main #section-two .content{
+		display: block;
+		width: 80%;
+		margin: auto;
+	}
+	
 	main #section-two .content .design{
-		height: 700px;
+		width: 100%;
+		height: 400px;
+		padding: 10px;
+		position: relative;
 	}
+	#hr-2{
+		margin-bottom: 35px;
+	}
+	
 	main #section-two .content .design .grid-two{
+		display: block;
+		/*grid-gap: 10px;
 		grid-template-rows: 500px auto;
+		grid-template-columns: auto;*/
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
 	}
+	
+	main #section-two .content .design .grid-two .box{
+	
+		width: 100%;
+		height: 70%;
+	}
+	
+	main #section-two .content .design .grid-two .box img{
+		width: 100%;
+		height: 100%;
+	}
+	
 	main #section-two .content .design .grid-two .box #para{
-		font-size: 40px;
-		line-height: 65px;
+		font-size: 20px;
+		line-height: 25px;
+		color: #2f4f4f;
+		margin-top: 5px;
+		margin-bottom: 10px;
 	}
+	
 }
-
-/* For Jio Phones */
-@media screen and (device-width: 240px) and (device-height: 320px){
-	main #section-one .main-card{
-		height: 85vh;
-	}
-}
-
 /* For IPad Pros */
 @media screen and (min-width: 1024px) and (min-height: 1320px){
 	main #section-one .main-card{
@@ -355,21 +400,5 @@ main #section-two .content .design .grid-two .box #para{
 	main #section-two .content .design .grid-two .box #para{
 		font-size: 50px;
 		line-height: 65px;
-	}
-}
-
-/* For Surface Duo */
-@media screen and (device-width: 450px) and (device-height: 600px){
-	main #section-one .main-card{
-		height: 80vh;
-	}
-	main #section-two .content .design{
-		height: 1400px;
-	}
-	main #section-two .content .design .grid-two{
-		grid-template-rows: 1000px auto;
-	}
-	main #section-two .content .design .grid-two .box #para{
-		font-size: 50px;
 	}
 }
