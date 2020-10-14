@@ -165,10 +165,11 @@ body{
     
     .content h1{
         height: 80px;
-        width: 160px;
+        width: 200px;
+        font-size: 20px;
         position: fixed;
         top: 25%;
-        left: 25%;
+        left: 50%;
         margin-top: -50px;
         margin-left: -100px;
     }
@@ -187,7 +188,7 @@ body{
         color:orangered;
         margin-top: 5px;
         border: 1px solid orangered ;
-        font-size: 20px;
+        font-size: 15px;
     }
     .btn-full:hover{
         background-color: blue;
@@ -199,7 +200,7 @@ body{
         color:orangered;
         margin-top: 5px;
         border: 1px solid orangered;
-        font-size: 20px;
+        font-size: 15px;
     }
     .btn-nav:hover{
         background-color: blue;
