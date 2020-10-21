@@ -20,7 +20,7 @@ body{
 	height: 70px;
     filter: drop-shadow(1px 1px 3px #000);
     float: left;
-    background:0009;
+    /*background:0009;*/
 }
 
 .header .menu{
